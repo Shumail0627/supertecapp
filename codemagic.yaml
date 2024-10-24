@@ -27,5 +27,3 @@ workflows:
         apple_id: $APP_STORE_EMAIL
         api_key: $API_KEY_PATH
         submit_to_testflight: true
-        notify_testers: true
-        skip_waiting_for_build_processing: false
