@@ -1,0 +1,31 @@
+workflows:
+  ios-release:
+    name: iOS Release Workflow
+    environment:
+      flutter: stable
+      xcode: latest
+      cocoapods: default
+      vars:
+        BUNDLE_ID: "com.rehanahmed.supertec" # Your Bundle ID
+        APP_STORE_EMAIL: $APP_STORE_EMAIL      # Set in Codemagic UI
+        APP_STORE_PASSWORD: $APP_STORE_PASSWORD # Set in Codemagic UI
+
+    scripts:
+      - name: Install dependencies
+        script: |
+          flutter pub get
+          cd ios && pod install && cd ..
+
+      - name: Build iOS app
+        script: flutter build ipa --release --no-codesign
+
+    artifacts:
+      - build/ios/ipa/*.ipa
+
+    publishing:
+      app_store_connect:
+        apple_id: $APP_STORE_EMAIL
+        api_key: $API_KEY_PATH
+        submit_to_testflight: true
+        notify_testers: true
+        skip_waiting_for_build_processing: false

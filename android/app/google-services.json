@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "416004369862",
+    "firebase_url": "https://supertec-office-default-rtdb.firebaseio.com",
+    "project_id": "supertec-office",
+    "storage_bucket": "supertec-office.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416004369862:android:f27ab1ee03175e7fce96c7",
+        "android_client_info": {
+          "package_name": "com.rf.supertecoffice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "416004369862-o7de7316ln9bd15nro2ncg8rp7q3r8o1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMfJthMyyNEDm6QCo6SWwLGwnd2HPME0g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "416004369862-o7de7316ln9bd15nro2ncg8rp7q3r8o1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "416004369862-u2nnomcoc3kqvr4o6h4umskrhatg0s87.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.attendance.supertecoffice"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
